@@ -92,6 +92,24 @@
     <ClCompile Include="demo16_balanced-binary-tree.cpp" />
     <ClCompile Include="demo17_binary-inorder-traversal.cpp" />
     <ClCompile Include="demo18_single-number-ii.cpp" />
+    <ClCompile Include="demo19_search-a-2d-matrix.cpp" />
+    <ClCompile Include="demo20_merge-two-sorted-lists.cpp" />
+    <ClCompile Include="demo21_sort-colors.cpp" />
+    <ClCompile Include="demo22_gray-code.cpp" />
+    <ClCompile Include="demo23_minimum-path-sum.cpp" />
+    <ClCompile Include="demo24_edit-distance.cpp" />
+    <ClCompile Include="demo25_minimum-depth-of-binary-tree.cpp" />
+    <ClCompile Include="demo26_ binary-tree-level-order-traversal.cpp" />
+    <ClCompile Include="demo27_binary-tree-zigzag-level-order-traversal.cpp" />
+    <ClCompile Include="demo28_binary-tree-level-order-traversal-ii.cpp" />
+    <ClCompile Include="demo29_symmetric-tree.cpp" />
+    <ClCompile Include="demo30_path-sum.cpp" />
+    <ClCompile Include="demo31_path-sum-ii.cpp" />
+    <ClCompile Include="demo32_populating-next-right-pointers-in-each-node-ii.cpp" />
+    <ClCompile Include="demo33_sum-root-to-leaf-numbers.cpp" />
+    <ClCompile Include="demo34_construct-binary-tree-from-preorder-and-inorder-traversal.cpp" />
+    <ClCompile Include="demo35_construct-binary-tree-from-inorder-and-postorder-traversal.cpp" />
+    <ClCompile Include="demo36_recover-binary-search-tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

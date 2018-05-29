@@ -71,7 +71,7 @@ two用来存储出现两次1（两次1的前提是之前的one必须为1，所以要&one而且必须在one之前
 /*
 argc 是外部命令参数的个数，argv[] 存放各参数的内容,
 */
-int main(int argc,char **argv)
+int main_demo18(int argc,char **argv)
 {
 	Solution_demo18 s1;
 	int Array[10] = {11,11,12,12,13,13,13,12,11,19};
