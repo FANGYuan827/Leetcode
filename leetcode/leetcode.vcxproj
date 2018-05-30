@@ -110,6 +110,9 @@
     <ClCompile Include="demo34_construct-binary-tree-from-preorder-and-inorder-traversal.cpp" />
     <ClCompile Include="demo35_construct-binary-tree-from-inorder-and-postorder-traversal.cpp" />
     <ClCompile Include="demo36_recover-binary-search-tree.cpp" />
+    <ClCompile Include="demo37_validate-binary-search-tree.cpp" />
+    <ClCompile Include="demo38_recover-binary-search-tree.cpp" />
+    <ClCompile Include="MorrisInorderTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

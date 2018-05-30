@@ -123,5 +123,14 @@
     <ClCompile Include="demo36_recover-binary-search-tree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="demo37_validate-binary-search-tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MorrisInorderTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="demo38_recover-binary-search-tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
