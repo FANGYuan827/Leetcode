@@ -26,35 +26,23 @@ struct TreeNode{
 class Solution_demo38 {
 public:
     int maxPathSum(TreeNode *root) {
-        if(!root)
-			return 0;
-		int maxsum= 0 ;
-		vector<int>tmp;
-		vector<vector<int> >res;
-		FindPath(root,tmp,res);
-		return maxsum;
-    }
-private:
-	void FindPath(TreeNode *root,vector<int>&tmp,vector<vector<int> >&res)
-	{
-		if(!root)
-			return;
-		if(root->left==NULL&&root->right==NULL)
-		{
-			tmp.push_back(root->val);
-			res.push_back(tmp);
-			tmp.pop_back();             //删除最后一个元素
-			return;
-		}
-		if(root)
-		{
-			tmp.push_back(root->val);
-			FindPath(root->left,tmp,res);
-			FindPath(root->right,tmp,res);
-			tmp.pop_back();
-		}
+		init_max = INT_MIN;
+		MaxSum(root);
+		return init_max;
 	}
+private:
+	int init_max;
+	int MaxSum(TreeNode *);
 };
+int Solution_demo38::MaxSum(TreeNode *root)
+{
+	if(!root)
+		return 0;
+	int l_max = max(0, MaxSum(root->left));
+	int r_max = max(0,MaxSum(root->right));
+	init_max = max(init_max,l_max+r_max+root->val);
+	return max(l_max,r_max)+root->val;
+}
 
 
 int main(int argc,char **argv)
