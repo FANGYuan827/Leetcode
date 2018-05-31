@@ -1,7 +1,7 @@
 /*
-2018Äê5ÔÂ30ÈÕ15:42:34
+2018å¹´5æœˆ30æ—¥15:42:34
 Given a binary tree, find the maximum path sum.
-The path may start and end at any node in the tree.    //Â·¾¶¿ÉÒÔÊÇ´ÓÈÎºÎ½Úµã¿ªÊ¼ ÈÎºÎ½Úµã½áÊø
+The path may start and end at any node in the tree.    //è·¯å¾„å¯ä»¥æ˜¯ä»ä»»ä½•èŠ‚ç‚¹å¼€å§‹ ä»»ä½•èŠ‚ç‚¹ç»“æŸ
 For example:
 Given the below binary tree,
 
@@ -26,34 +26,25 @@ struct TreeNode{
 class Solution_demo38 {
 public:
     int maxPathSum(TreeNode *root) {
-        if(!root)
-			return 0;
-		int maxsum= 0 ;
-		vector<int>tmp;
-		vector<vector<int> >res;
-		FindPath(root,tmp,res);
-		return maxsum;
+	    if(!root)
+	    {
+		    init_max = INT_MIN;
+		    MaxSum(root);
+		    return init_max;
+	    }
     }
-private:
-	void FindPath(TreeNode *root,vector<int>&tmp,vector<vector<int> >&res)
+	private:
+	int MaxSum(TreeNode *root)
 	{
 		if(!root)
-			return;
-		if(root->left==NULL&&root->right==NULL)
-		{
-			tmp.push_back(root->val);
-			res.push_back(tmp);
-			tmp.pop_back();             //É¾³ı×îºóÒ»¸öÔªËØ
-			return;
-		}
-		if(root)
-		{
-			tmp.push_back(root->val);
-			FindPath(root->left,tmp,res);
-			FindPath(root->right,tmp,res);
-			tmp.pop_back();
-		}
+			return 0;
+		int l_max = max(0,MaxSum(root->left));
+		int r_max = max(0,MaxSum(root->right));
+		init_max = max(init_max,l_max+r_max+root->val);
+		return max(l_amx,r_max)+root->val;
 	}
+	int init_max;
+        
 };
 
 
@@ -69,7 +60,7 @@ int main(int argc,char **argv)
 	t3.right = &t7;
 
 	int res = s1.maxPathSum(&t1);
-	cout<<"¸ÃÊ÷µÄ×î´óÂ·¾¶ºÍÎª:"<<res<<endl;
+	cout<<"è¯¥æ ‘çš„æœ€å¤§è·¯å¾„å’Œä¸º:"<<res<<endl;
 	system("pause");
 	return 0;
 }
