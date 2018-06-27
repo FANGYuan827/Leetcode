@@ -112,6 +112,22 @@
     <ClCompile Include="demo36_recover-binary-search-tree.cpp" />
     <ClCompile Include="demo37_validate-binary-search-tree.cpp" />
     <ClCompile Include="demo38_recover-binary-search-tree.cpp" />
+    <ClCompile Include="demo44_sort-list.cpp" />
+    <ClCompile Include="demo45_linked-list-cycle-ii.cpp" />
+    <ClCompile Include="demo46_swap-nodes-in-pairs.cpp" />
+    <ClCompile Include="demo47_copy-list-with-random-pointer.cpp" />
+    <ClCompile Include="demo48_remove-duplicates-from-sorted-list.cpp" />
+    <ClCompile Include="demo49_remove-duplicates-from-sorted-list-ii.cpp" />
+    <ClCompile Include="demo50_remove-nth-node-from-end-of-list.cpp" />
+    <ClCompile Include="demo51_partition-list.cpp" />
+    <ClCompile Include="demo52_median-of-two-sorted-arrays.cpp" />
+    <ClCompile Include="demo53_add-two-numbers.cpp" />
+    <ClCompile Include="demo54_merge-k-sorted-lists.cpp" />
+    <ClCompile Include="demo55_reverse-linked-list-ii.cpp" />
+    <ClCompile Include="demo56_reorder-list.cpp" />
+    <ClCompile Include="demo57_convert-sorted-list-to-binary-search-tree.cpp" />
+    <ClCompile Include="demo58_reverse-nodes-in-k-group.cpp" />
+    <ClCompile Include="demo59_convert-sorted-list-to-binary-search-tree.cpp" />
     <ClCompile Include="MorrisInorderTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
